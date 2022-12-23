@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: betterreads
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:A1_mongodb@cluster0.go2xt.mongodb.net/spring?retryWrites=true&w=majority
+    cassandra:
+      keyspace-name: main
+      username: ywCmubBIPEbQvZxDYazrbxkH
+      password: ODahyq0GUMtH7hzcf6dOmDJGQcb0u49rXASl9+m0clAuh9az41DykZ1tJnfXMi4f9q5+9HzL029W+n4prWvFNv3HD,oFh3l7f0uQIj3QAHLNY7XJXKxEUbpWey6e2gSD
+      schema-action: create-if-not-exists
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+
+port: 27017
+dbname: testdb
+
+
+
+datastax.astra:
+    secure-connect-bundle: secure-connect.zip
+
+
+astra.db:
+    id: 01cb52e1-51a6-46cf-9229-4886cc92aa41
+    region: us-east1
+    keyspace: main
+    application.token: AstraCS:ywCmubBIPEbQvZxDYazrbxkH:b39422bd0b64e9ea40a1fe3ba8b3991717e98acbb8d3c472ce62b106eec29dc7
