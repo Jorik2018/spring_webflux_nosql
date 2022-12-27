@@ -1,21 +1,26 @@
-package com.javatechie.redis;
+package org.isobit.nosql.redis;
 
 import org.isobit.nosql.redis.entity.Product;
-import org.isobit.nosql.redis.respository.ProductDao;
+import org.springframework.http.HttpStatus;
+import org.isobit.nosql.redis.repository.ProductDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.List;
 
+@CrossOrigin
 @RestController
-@RequestMapping("/product")
+@RequestMapping("product")
 public class ProductController {
+	
     @Autowired
     private ProductDao dao;
 
     @PostMapping
+	@ResponseStatus(HttpStatus.CREATED)
     public Product save(@RequestBody Product product) {
         return dao.save(product);
     }

@@ -1,10 +1,10 @@
-package org.isobit.nosql.service;
+package org.isobit.nosql.mongodb.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
  
-import org.isobit.nosql.dao.EmployeeRepository;
-import org.isobit.nosql.model.Employee;
+import org.isobit.nosql.mongodb.repository.EmployeeRepository;
+import org.isobit.nosql.mongodb.model.Employee;
  
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

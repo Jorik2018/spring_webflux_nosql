@@ -1,4 +1,4 @@
-package org.isobit.nosql.model;
+package org.isobit.nosql.mongodb.model;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;

@@ -27,7 +27,7 @@ public class BookController {
     @Autowired
     UserBooksRepository userBooksRepository;
     
-	@PostMapping("/")
+	@PostMapping("")
     @ResponseStatus(HttpStatus.CREATED)
     @ResponseBody
     public void create(@RequestBody Book e) {

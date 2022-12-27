@@ -1,4 +1,4 @@
-package org.isobit.nosql.redis.respository;
+package org.isobit.nosql.redis.repository;
 
 import org.isobit.nosql.redis.entity.Product;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +11,7 @@ import java.util.List;
 public class ProductDao {
 
     public static final String HASH_KEY = "Product";
+	
     @Autowired
     private RedisTemplate template;
 

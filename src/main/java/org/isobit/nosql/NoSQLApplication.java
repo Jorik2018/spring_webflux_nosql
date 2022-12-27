@@ -14,7 +14,7 @@ import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRep
 //https://github.com/DataStax-Examples/spring-k8s-cassandra-microservices/blob/master/microservice-spring-data/src/main/java/com/datastax/examples/SpringDataCassandraConfiguration.java
 
 @SpringBootApplication
-@EnableReactiveMongoRepositories(basePackages = "org.isobit.nosql.dao")
+@EnableReactiveMongoRepositories(basePackages = "org.isobit.nosql.mongodb")
 //@EnableConfigurationProperties (DataStaxAstraProperties.class)
 public class NoSQLApplication {
 

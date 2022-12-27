@@ -1,4 +1,4 @@
-package org.isobit.nosql.controller;
+package org.isobit.nosql.mongodb.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,19 +12,20 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
  
-import org.isobit.nosql.model.Employee;
-import org.isobit.nosql.service.EmployeeService;
+import org.isobit.nosql.mongodb.model.Employee;
+import org.isobit.nosql.mongodb.service.EmployeeService;
  
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
  
 @RestController
+@RequestMapping("employee")
 public class EmployeeController {
 	
     @Autowired
     private EmployeeService employeeService;
  
-    @RequestMapping(value = { "/create", "/" }, method = RequestMethod.POST)
+    @RequestMapping(value = { "/create", "" }, method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
     @ResponseBody
     public void create(@RequestBody Employee e) {

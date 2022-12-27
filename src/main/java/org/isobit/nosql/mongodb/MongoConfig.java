@@ -1,4 +1,4 @@
-package org.isobit.nosql.config;
+package org.isobit.nosql.mongodb;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

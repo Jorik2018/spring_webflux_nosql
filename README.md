@@ -7,7 +7,9 @@ DESCRIBE KEYSPACES;
 
 
 REDIS
-
+https://developer.redis.com/develop/java/spring/rate-limiting/fixed-window/reactive/
+https://hantsy.github.io/spring-reactive-sample/data/data-redis.html
+https://github.com/spring-guides/gs-spring-data-reactive-redis/tree/main/complete/src/main/java/hello
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Connection;
 
